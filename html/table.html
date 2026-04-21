@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Example</title>
+</head>
+<body>
+    <h1>IBM EMPLOYEE DATA</h1>
+    <table border="1" cellspacing="3" cellpadding="4">
+        <colgroup>
+            <col span="2" bgcolor="red">
+        </colgroup>
+        
+        <thead>
+            <tr bgcolor="yellow">
+                <th>id</th>
+                <th>name</th>
+                <th>salary</th>
+                <th>roll</th>
+                <th>address</th>
+                <th>action</th>
+            </tr>
+            
+        </thead>
+        <tbody>
+            <tr>
+                <td>E100</td>
+                <td>ravi</td>
+                <td>50000</td>
+                <td rowspan="2">developer</td>
+                <td>vizag</td>
+                <td>
+                    <button>edit</button>
+                    <button>delete</button>
+                </td>
+            </tr>
+            <tbody>
+                <tr>
+                    <td>E101</td>
+                    <td>Jack</td>
+                    <td>60000</td>
+                    <td>full stack developer</td>
+                    <td>hyd</td>
+                    <td>
+                        <button>edit</button>
+                        <button>delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td align="center" colspan="6"> 2026 &copy; copyrigth</td>
+            </tr>
+        </tfoot>
+    </table>
+   <table border="6" cellspacing="9" cellpadding="7" align="center" bgcolor="">
+    <tr bgcolor="green">
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr bgcolor="red">
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+    </tr>
+    <tr bgcolor="yellow">
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+    </tr>
+   </table>
+</body>
+</html>
