@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       form{
+            background-color:white;
+            border-radius: 10px;
+            box-sizing: border-box;
+       }
+        #username{
+            width: 400px;
+        }
+        /* fieldset{
+            width: 200px;
+            height: 400px;
+        } */
+        h1{
+            justify-content: center;
+            color: aliceblue;
+        }
+        button{
+            width: 100%;
+            background-color: rgb(11, 11, 218);
+            color: white;
+        }
+        label {
+            display: inline;
+            font-weight: normal;
+            vertical-align: middle;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 100px 20px;
+            margin-bottom: 40px;
+            background-color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1>Servey Form</h1>
+    <form>
+        <fieldset>
+            <label for="username" >USERNAME:-</label>
+            <input type="text" id="username" required placeholder="enter your username"><br><br>
+            <label for="feedback">FEEDBACK</label>
+            <textarea></textarea>
+            <br><br>
+            <label for="rating">RATING</label>
+            <input type="radio" id="rating" name="rating" value="1">1
+            <input type="radio" id="rating" name="rating" value="2">2
+            <input type="radio" id="rating" name="rating" value="3">3
+            <input type="radio" id="rating" name="rating" value="4">4
+            <input type="radio" id="rating" name="rating" value="5">5 
+            <br><br>
+            <label for="fav tech">Favourite Technology</label>
+            <select>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="js">JS</option>
+                <option value="mongodb">MongoDB</option>
+                <option value="reactjs">Reactjs</option>
+            </select>
+            <br><br>
+            <label for="subscribe">Subscribe:</label>
+            <div class="checkbox-group">
+                <label>
+                    <input type="checkbox">Subscribe to updates
+                </label><br><br>
+            </div>
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>

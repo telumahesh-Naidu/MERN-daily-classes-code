@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service request form</title>
+    <style>
+        body{
+            background-color: grey;
+            color: black;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1{
+            color: black;
+            margin-bottom: 30px;
+        }
+        form{
+            background-color: white;
+            width: 100%;
+            padding: 30px;
+            border-radius: 12px;
+            box-sizing: border-box;
+        }
+        label{
+            display: block;
+        }
+        #custname{
+            width: 100%;
+        }
+        #contactno{
+            width: 100%;
+        }
+        button{
+            width: 100%;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+   <h1>Service Form</h1>
+    
+    <form>
+        <label for="custname">Customer Name:</label>
+        <input type="text" id="custname" required placeholder="Enter your name">
+
+        <label for="contactno">Contact No:</label>
+        <input type="tel" id="contactno" required placeholder="Enter your phone no">
+
+        <label for="issue">Issue:</label>
+        <select id="issue" required>
+            <option value="">--Select Issue--</option>
+            <option value="laptop">Laptop Repair</option>
+            <option value="internet">Internet Issue</option>
+            <option value="software">Software Problem</option>
+            <option value="hardware">Hardware Problem</option>
+        </select>
+
+        <label for="description">Description:</label>
+        <textarea id="description" placeholder="Enter the type of issue"></textarea>
+
+        <label>Priority:</label>
+        <div class="radio-group">
+            <label for="priority-low">
+                <input type="radio" id="priority-low" name="priority" value="low"> Low
+            </label>
+            <label for="priority-medium">
+                <input type="radio" id="priority-medium" name="priority" value="medium"> Medium
+            </label>
+            <label for="priority-high">
+                <input type="radio" id="priority-high" name="priority" value="high"> High
+            </label>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
