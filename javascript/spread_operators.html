@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr1=[10,20,30,40];
+        let arr2=[50,null,{name:"ravi",role:"developer"},()=>{}]
+
+        let arr3=[...arr1,...arr2,"html","css",true];
+        console.log(arr3)
+
+        let [a,b,d,c]=arr1;
+        console.log(a);
+
+        let  [f,g,i,k,l]=arr2;
+        console.log(g)
+
+        console.log(i)
+
+        let user={
+            name:"Ravi",
+            phno:"9087986574"
+        }
+        let orderDtails={
+            productName:"",
+            price:"",
+            status:""
+        }
+        let orderHIstory={
+
+
+        }
+
+        let courseDetails={
+            name:"MERN",
+            duration:"30days",
+            totalHrs:"180hrs"
+        }
+        let {name,duration,totalHrs}=courseDetails;
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        tbody tr:nth-child(odd){
+            background-color:yellowgreen;
+        }
+        tbody tr:nth-child(even){
+            background-color:rgb(50, 205, 192);
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input{
+            margin-bottom: 40px;
+        }
+        thead{
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <h1>Emp Details</h1>
+    <input type="Search" placeholder="Search Employe">
+    <table  border="1" cellspacing="0" cellpadding="10">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Salary</th>
+                <th>Address</th>
+                <th>Phone No.</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Mahesh</th>
+                <th>Developer</th>
+                <th>100000</th>
+                <th>Vizag</th>
+                <th>9897681897</th>
+            </tr>
+            <tr>
+                <th>Raju</th>
+                <th>Java Developer</th>
+                <th>900000</th>
+                <th>hyd</th>
+                <th>8976787895</th>
+            </tr>
+            <tr>
+                <th>Luther</th>
+                <th>FUll stack Developer</th>
+                <th>800000</th>
+                <th>chennai</th>
+                <th>7899656779</th>
+            </tr>
+            <tr>
+                <th>Gopi</th>
+                <th>FUll stack Developer</th>
+                <th>800000</th>
+                <th>mumbai</th>
+                <th>7899656779</th>
+            </tr>
+        </tbody>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum repellat similique nulla distinctio repellendus necessitatibus non, modi debitis assumenda vitae cumque reprehenderit delectus fugiat a? Aut nemo autem asperiores accusantium?</p>
+    <button onclick="disappearParagraph()">Click Here</button>
+    <script>
+        function disappearParagraph(){
+            let para = document.querySelector("p");
+            para.style.display =para.style.display == "block" ? "none": "block"
+        }
+        let rows=document.querySelectorAll("tbody tr");
+        let input=document.querySelector("input");
+
+        //console.log(row);
+
+
+        input.addEventListener('keyup', () => {
+            let inputText=input.value.toLowerCase
+            rows.forEach((rows)=>{
+                let rowData = rows.textContent;
+                let result = rowData.toLowerCase().includes(inputText);
+                //console.log(result);
+                rows.style.display = "block": "none" 
+
+            })
+            //console.log(inputText);
+
+        })
+
+
+        
+        //console.log(this)
+
+    </script>
+</body>
+</html>

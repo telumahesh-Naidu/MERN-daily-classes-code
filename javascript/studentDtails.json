@@ -1,0 +1,10 @@
+[{
+    "name":"ravi",
+    "roll":500,
+    "active":true
+},
+ {
+    "name":"rai",
+    "rollno":600,
+    "active":true
+ }]

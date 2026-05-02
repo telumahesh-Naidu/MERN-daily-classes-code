@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Request Form</title>
+    <style>
+        body {
+            background-color: #f0f4f8;
+            color: #333;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            color: #1a365d;
+            margin-bottom: 30px;
+        }
+
+        form {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 500px;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+            box-sizing: border-box;
+        }
+
+        /* Label styling */
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #4a5568;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #cbd5e0;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-family: inherit;
+            font-size: 14px;
+            transition: border-color 0.2s ease;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #3182ce;
+            box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.1);
+        }
+
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        .radio-group {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+
+        .radio-group label {
+            display: flex;
+            align-items: center;
+            font-weight: normal;
+            margin-bottom: 0;
+            cursor: pointer;
+        }
+
+        .radio-group input[type="radio"] {
+            margin-right: 8px;
+            cursor: pointer;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            background-color: #3182ce;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #2b6cb0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Service Form</h1>
+    
+    <form>
+        <label for="custname">Customer Name:</label>
+        <input type="text" id="custname" required placeholder="Enter your name">
+
+        <label for="contactno">Contact No:</label>
+        <input type="tel" id="contactno" required placeholder="Enter your phone no">
+
+        <label for="issue">Issue:</label>
+        <select id="issue" required>
+            <option value="">--Select Issue--</option>
+            <option value="laptop">Laptop Repair</option>
+            <option value="internet">Internet Issue</option>
+            <option value="software">Software Problem</option>
+            <option value="hardware">Hardware Problem</option>
+        </select>
+
+        <label for="description">Description:</label>
+        <textarea id="description" placeholder="Enter the type of issue"></textarea>
+
+        <label>Priority:</label>
+        <div class="radio-group">
+            <label for="priority-low">
+                <input type="radio" id="priority-low" name="priority" value="low"> Low
+            </label>
+            <label for="priority-medium">
+                <input type="radio" id="priority-medium" name="priority" value="medium"> Medium
+            </label>
+            <label for="priority-high">
+                <input type="radio" id="priority-high" name="priority" value="high"> High
+            </label>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

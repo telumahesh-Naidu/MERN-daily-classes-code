@@ -1,0 +1,116 @@
+Strings:-
+-------
+-> Strings are tha group of characters
+-> we can declare strings in 3 ways
+1.''
+2.""
+3.``
+
+
+
+
+
+
+
+Arrays:-
+------
+
+->Arrays are linear data structers used to homogenous and hetrogeneous types of data
+-> Array size is not d=fixed
+
+
+functions:-
+--> Functions is the block of statements which will get execute what ever we called or invoke
+--> using functions we can increase code readability and code resuablity
+
+basically we have 2 types functions
+ 
+1. User define function: 
+                ...Any function that are declare by user or programmer as per there requirement 
+2.Predefine function:
+                ...predefine functions means inbuilt functions
+
+js function types:
+
+1. Anonyms functions
+2. normal function /named function
+3. functional expression
+4. immediate invoking function/self calling function
+5. arrow function(es6) = ()=>{}
+6. nested function
+7.higher order function
+            any function that wii accept another function as paramete
+8. callback function
+            any function passing value to the higher order
+9. generator function
+            function* generator()
+            we didn't use in react 
+Objects:-
+-------
+  -> objects are the real time enteties which is used to store data in the form key and value pair
+
+  1. litteral way
+  2. using keyword(create an object class)
+
+
+  2 important methods 
+  1. object.seal
+        in this field no - deletion, insert yes-updation,read
+  2. object. 
+
+  Bom:- Browser object model
+  it contains window models
+
+
+
+  DOM(DOCUMENT OBJECT MODEL):-
+  --------------------------
+            DOM ARE USED TO MANIPULATE HTML AND cSS
+            to build dynamic pages
+
+dom events are applied in 3 ways
+1. activity way - on click, on mouse over
+2.property way
+3.add event listener
+
+JSON(javascript and object notation):
+-------------------------------------
+//the alteration of json is token based 
+this json is similar to javascript object
+the we can create the seperatee file for the json
+eg:- 
+      [{
+            'name':'ravi',
+            'rollno':500,
+            'active':true
+      },{
+            'name':'rai',
+            'rollno':600,
+            'active':true
+      }]
+asymchronous javascript:
+------------------------
+-> 
+
+
+type casting:-
+-------------
+converting one type of data into snother type
+types::
+1. internal/impplicit type casting 
+--js engine convert one data type into another internally
+2.external 
+
+
+
+time inervals:- the time intervals used to execute certain a period of time
+--------------
+
+we have two function and both function are the higher order function
+1. setTimeout()
+2.setIntervals() two parameters are passed sec and ms
+
+sybtax: setTimeout(()=>{
+            console.log("hello")
+
+        },setTimeout);
