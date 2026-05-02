@@ -1,0 +1,19 @@
+label{
+    color: beige;
+    font-weight: bold;
+    font-size: 25px;
+}
+label::after{
+    content: "*";
+    color: burlywood;
+}
+label::first-of-type::before{
+    content: "🧑‍💼";
+}
+label::last-of-type::before{
+    content: "🔐";
+}
+button{
+    background-color: mediumaquamarine;
+    padding: 10px 30px;
+}
