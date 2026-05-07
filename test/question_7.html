@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students List</title>
+</head>
+<body>
+    <h2>Students</h2>
+    <div id="student-container"></div>
+
+    <script>
+        let students = ["Ravi", "Sita", "John"];
+        
+        let ul = document.createElement("ul");
+        
+        students.forEach((student, index) => {
+            let li = document.createElement("li");
+            
+            li.textContent = `${index + 1}. ${student}`;
+            
+            ul.appendChild(li);
+        });
+        document.getElementById("student-container").appendChild(ul);
+    </script>
+</body>
+</html>
